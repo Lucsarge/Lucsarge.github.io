@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #acbfeb;
+    --secondary-color: #4F628E;
+    --tertiary-color: #2E4272;
+    --quatrenary-color: #162955;
+    --pentiary-color: #0d2869;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+h1{
+    color: var(--quatrenary-color);
+    text-align: center;
+}
+
+.project{
+    margin-left: auto;
+    margin-right: 0;
+    float: left;
+    text-align: center;
+    padding: 4px;
+    background-color: var(--secondary-color);
+}
+
+.thumbnail{
+    width: 500px;
+    height: 300px;
+    object-fit: scale-down;
+    background-color: black;
+}
