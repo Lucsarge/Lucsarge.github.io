@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <!--References-->
-        <script type="text/javascript" src="js/helper.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+<head>
+    <!-- References -->
+    <script type="text/javascript" src="js/helper.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-        <title>Luc Sargent - Repos</title>
-    </head>
+    <title>Luc Sargent</title>
+</head>
 
-    <body>
-        <h1>Personal Projects</h1>
+<body>
+    <h1>Personal Projects</h1>
 
-        <!--SDL Snake Clone-->
+    <!-- TODO: Find better way to add these decorations -->
+    <!-- Background Decorations -->
+    <div class="hex-wrap hexagon-1">
+        <div class="hexagonBase"></div>
+    </div>
+    <div class="hex-wrap hexagon-2">
+        <div class="hexagonBase"></div>
+    </div>
+    <div class="hex-wrap hexagon-3">
+        <div class="hexagonBase"></div>
+    </div>
+    <div class="hex-wrap hexagon-4">
+        <div class="hexagonBase"></div>
+    </div>
+
+    <!-- TODO: Format each Project tile to be the same dimensions and clean up the text display -->
+    <!-- TODO: For each project display a static image until hovering over to reveal a gif -->
+    <!-- Project Gallery -->
+    <div class="projectGallery">
+        <!-- SDL Snake Clone -->
         <div class="project">
             <a href="https://github.com/Lucsarge/snake-clone-sdl">
-                <img class="thumbnail" src="https://github.com/Lucsarge/snake-clone-sdl/raw/main/snake-gameplay.gif" alt="SDL Snake Clone">
+                <img class="thumbnail" src="https://github.com/Lucsarge/snake-clone-sdl/raw/main/snake-gameplay.gif"
+                    alt="SDL Snake Clone">
                 <p>SDL Snake Clone Repo</p>
             </a>
         </div>
 
-        <!--Boid Sanctuary-->
+        <!-- Boid Sanctuary -->
         <div class="project">
             <a href="https://github.com/Lucsarge/BoidSanctuary">
                 <img class="thumbnail" src="images/boids-screenshot.png" alt="boid-screenshot.png">
@@ -28,12 +48,14 @@
             </a>
         </div>
 
-        <!--SFML Boid Simulation-->
+        <!-- SFML Boid Simulation -->
         <div class="project">
             <a href="https://github.com/Lucsarge/sfml_boid_simulation">
                 <img class="thumbnail" src="images/sfml-boid-screenshot.png" alt="sfml-boid-screenshot.png">
                 <p>SFML Boid Simulation</p>
             </a>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
