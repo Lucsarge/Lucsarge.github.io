@@ -1,68 +1,135 @@
-body{
-    background-color: rgb(19, 19, 19);
-    overflow-x: hidden; /* Keeps the decorations from causing horizontal scrolling*/
+html {
+    height: 100%;
 }
 
-h1{
+body {
+    background-color: rgb(19, 19, 19);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
+    /* Keeps the decorations from causing horizontal scrolling*/
+}
+
+h1 {
     color: white;
     text-align: center;
 }
 
-.projectGallery{
+.projectGallery {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.project{
-    width: 400px;
-    height: auto;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
     overflow: auto;
+    height: 100%;
 }
 
-.thumbnail{
-    max-height: 100%;
+.project {
+    display: flex;
+    align-content: start;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 200px;
+}
+
+.thumbnail {
+    max-width: 20%;
+    flex: 20%;
+}
+
+.thumbnail img{
     max-width: 100%;
-    aspect-ratio: .5;
-    z-index: 0;
+    height: 100%;
     object-fit: contain;
 }
 
-.hexagonBase {
+.projectBody {
+    flex: 80%;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+}
+
+/* TODO: Update this to the new background li system */
+/* .hexagonBase {
     aspect-ratio: 1/cos(30deg);
-    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
     background: grey;
 }
 
-.hex-wrap{
+.hex-wrap {
     filter: drop-shadow(15px 7px rgb(49, 49, 49)) blur(2px);
     z-index: -1;
     position: absolute;
+} */
+
+@keyframes hexagons {
+    from {
+        transform: scale(17) translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(20) translate(-50%, -50%);
+        opacity: 0.75;
+    }
 }
 
-.hexagon-1{
-    width: 300px;
-    top: 10%;
-    left: 0%;
+.background {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.hexagon-2{
-    width: 300px;
-    top: -20%;
-    right: 30%;
+.background li {
+    z-index: -1;
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px grey;
+    color: transparent;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: hexagons 5s linear alternate infinite;
+
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+    background: grey;
 }
 
-.hexagon-3{
-    width: 300px;
-    top: 50%;
-    right: -10%;
+.background li:nth-child(1) {
+    animation-delay: 0s;
+    left: 10vw;
+    top: 10vh;
 }
 
-.hexagon-4{
-    width: 500px;
-    top: 50%;
-    right: 40%;
+.background li:nth-child(2) {
+    animation-delay: 0s;
+    left: 70vw;
+    top: 30vh;
+}
+
+.background li:nth-child(3) {
+    animation-delay: 0s;
+    left: 35vw;
+    top: 65vh;
+}
+
+.background li:nth-child(4) {
+    animation-delay: 0s;
+    left: 80vw;
+    top: 90vh;
+}
+
+.background li:nth-child(5) {
+    animation-delay: 0s;
+    left: 15vw;
+    top: 100vh;
 }
