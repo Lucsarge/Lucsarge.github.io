@@ -3,29 +3,28 @@
 
 <head>
     <!-- References -->
-    <script type="text/javascript" src="js/helper.js"></script>
+
+    <!-- TODO: Utilize Mustache and JQuery to template the project gallery, should allow for better scaling and reduce repetitive code -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script> -->
+
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <title>Luc Sargent</title>
 </head>
 
 <body>
-    <h1>Personal Projects</h1>
-
     <!-- TODO: Find better way to add these decorations -->
     <!-- Background Decorations -->
-    <div class="hex-wrap hexagon-1">
-        <div class="hexagonBase"></div>
-    </div>
-    <div class="hex-wrap hexagon-2">
-        <div class="hexagonBase"></div>
-    </div>
-    <div class="hex-wrap hexagon-3">
-        <div class="hexagonBase"></div>
-    </div>
-    <div class="hex-wrap hexagon-4">
-        <div class="hexagonBase"></div>
-    </div>
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <h1>Personal Projects</h1>
 
     <!-- TODO: Format each Project tile to be the same dimensions and clean up the text display -->
     <!-- TODO: For each project display a static image until hovering over to reveal a gif -->
@@ -33,29 +32,44 @@
     <div class="projectGallery">
         <!-- SDL Snake Clone -->
         <div class="project">
-            <a href="https://github.com/Lucsarge/snake-clone-sdl">
-                <img class="thumbnail" src="https://github.com/Lucsarge/snake-clone-sdl/raw/main/snake-gameplay.gif"
-                    alt="SDL Snake Clone">
-                <p>SDL Snake Clone Repo</p>
-            </a>
+            <div class="thumbnail">
+                <img src="https://github.com/Lucsarge/snake-clone-sdl/raw/main/snake-gameplay.gif" alt="SDL Snake Clone">
+                <!-- <a href="https://github.com/Lucsarge/snake-clone-sdl">
+                </a> -->
+            </div>
+            <div class="projectBody">
+                <h2>SDL Snake Clone Repo</h2>
+                <p>This is a basic example of the description for a project.</p>
+            </div>
         </div>
 
         <!-- Boid Sanctuary -->
         <div class="project">
-            <a href="https://github.com/Lucsarge/BoidSanctuary">
-                <img class="thumbnail" src="images/boids-screenshot.png" alt="boid-screenshot.png">
-                <p>Boid Sanctuary</p>
-            </a>
+            <div class="thumbnail">
+                <a href="https://github.com/Lucsarge/BoidSanctuary">
+                    <img src="images/boids-screenshot.png" alt="boid-screenshot.png">
+                </a>
+            </div>
+            <div class="projectBody">
+                <h2>Boid Sanctuary</h2>
+                <p>This is a basic example of the description for a project.</p>
+            </div>
         </div>
 
         <!-- SFML Boid Simulation -->
         <div class="project">
-            <a href="https://github.com/Lucsarge/sfml_boid_simulation">
-                <img class="thumbnail" src="images/sfml-boid-screenshot.png" alt="sfml-boid-screenshot.png">
-                <p>SFML Boid Simulation</p>
-            </a>
+            <div class="thumbnail">
+                <a href="https://github.com/Lucsarge/sfml_boid_simulation">
+                    <img src="images/sfml-boid-screenshot.png" alt="sfml-boid-screenshot.png">
+                </a>
+            </div>
+            <div class="projectBody">
+                <h2>SFML Boid Simulation</h2>
+                <p>This is a basic example of the description for a project.</p>
+            </div>
         </div>
     </div>
+
 </body>
 
 </html>
