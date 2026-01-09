@@ -25,50 +25,25 @@
     </ul>
 
     <h1>Personal Projects</h1>
-
     <!-- TODO: Format each Project tile to be the same dimensions and clean up the text display -->
     <!-- TODO: For each project display a static image until hovering over to reveal a gif -->
-    <!-- Project Gallery -->
-    <div class="projectGallery">
-        <!-- SDL Snake Clone -->
-        <div class="project">
-            <div class="thumbnail">
-                <img src="https://github.com/Lucsarge/snake-clone-sdl/raw/main/snake-gameplay.gif" alt="SDL Snake Clone">
-                <!-- <a href="https://github.com/Lucsarge/snake-clone-sdl">
-                </a> -->
-            </div>
-            <div class="projectBody">
-                <h2>SDL Snake Clone Repo</h2>
-                <p>This is a basic example of the description for a project.</p>
-            </div>
-        </div>
+    <div class="projectGallery" id="projectList"></div>
 
-        <!-- Boid Sanctuary -->
+    <template id="projectTemplate">
         <div class="project">
             <div class="thumbnail">
-                <a href="https://github.com/Lucsarge/BoidSanctuary">
-                    <img src="images/boids-screenshot.png" alt="boid-screenshot.png">
+                <a>
+                    <img>
                 </a>
             </div>
             <div class="projectBody">
-                <h2>Boid Sanctuary</h2>
-                <p>This is a basic example of the description for a project.</p>
+                <h2></h2>
+                <p></p>
             </div>
         </div>
+    </template>
 
-        <!-- SFML Boid Simulation -->
-        <div class="project">
-            <div class="thumbnail">
-                <a href="https://github.com/Lucsarge/sfml_boid_simulation">
-                    <img src="images/sfml-boid-screenshot.png" alt="sfml-boid-screenshot.png">
-                </a>
-            </div>
-            <div class="projectBody">
-                <h2>SFML Boid Simulation</h2>
-                <p>This is a basic example of the description for a project.</p>
-            </div>
-        </div>
-    </div>
+    <script src="js/index.js"></script>
 
 </body>
 
