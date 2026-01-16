@@ -14,36 +14,29 @@
 </head>
 
 <body>
-    <!-- TODO: Find better way to add these decorations -->
-    <!-- Background Decorations -->
-    <ul class="background">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+    <div class="main">
+        <canvas class="bgCanvas" id="personalizedBackground"></canvas>
 
-    <h1>Personal Projects</h1>
-    <!-- TODO: Format each Project tile to be the same dimensions and clean up the text display -->
-    <!-- TODO: For each project display a static image until hovering over to reveal a gif -->
-    <div class="projectGallery" id="projectList"></div>
-
-    <template id="projectTemplate">
-        <div class="project">
-            <div class="thumbnail">
-                <a>
-                    <img>
-                </a>
-            </div>
-            <div class="projectBody">
-                <h2></h2>
-                <p></p>
-            </div>
+        <div class="projectGallery" id="projectList">
+            <h1 class="title">Personal Projects</h1>
         </div>
-    </template>
 
-    <script src="js/index.js"></script>
+        <template id="projectTemplate">
+            <div class="project">
+                <div class="thumbnail">
+                    <a>
+                        <img>
+                    </a>
+                </div>
+                <div class="projectBody">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+        </template>
+
+        <script src="js/index.js"></script>
+    </div>
 
 </body>
 
