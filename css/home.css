@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    flex: auto;
+    grid-template-areas:
+        "introduction portrait";
+    grid-template-columns: 1fr 1fr;
+}
+
+.introduction {
+    color: white;
+    padding: 10px 0px 10px 20px;
+    align-self: center;
+}
+
+.introduction h2 {
+    margin: 0px;
+    font-weight: 1000;
+    font-size: xxx-large;
+}
+
+.introduction p {
+    margin: 0px;
+    color: #e6e6e6;
+    padding: 0px 50px 0px 20px;
+    font-size: large;
+}

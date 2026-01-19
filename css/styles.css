@@ -1,15 +1,45 @@
+:root{
+    --red-color: #b10000;
+}
+
 html {
     height: 100%;
 }
 
 body {
-    background-color: rgb(19, 19, 19);
+    background-color: #202020;
     height: 100%;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
     margin: 0;
     /* Keeps the decorations from causing horizontal scrolling*/
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+header h1{
+    margin: 0;
+    padding: 10px 0px 10px 20px;
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px 60px 0px 0px;
+    gap: 15px;
+}
+
+.navigation a{
+    font-size: large;
+    text-decoration: none;
+    color: var(--red-color);
 }
 
 .main {
@@ -38,6 +68,7 @@ h1 {
     text-align: center;
 }
 
+/* TODO: move to separate Projects.css file */
 .projectGallery {
     display: flex;
     flex-direction: column;
