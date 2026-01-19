@@ -2,42 +2,37 @@
 <html>
 
 <head>
-    <!-- References -->
-
-    <!-- TODO: Utilize Mustache and JQuery to template the project gallery, should allow for better scaling and reduce repetitive code -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script> -->
-
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
 
     <title>Luc Sargent</title>
 </head>
 
 <body>
-    <div class="main">
-        <canvas class="bgCanvas" id="personalizedBackground"></canvas>
+    <header>
+        <h1>Luc</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/projects.html">Projects</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="projectGallery" id="projectList">
-            <h1 class="title">Personal Projects</h1>
+    <div class="container">
+        <div class="introduction">
+            <h2>Luc Sargent</h2>
+            <p>I am a software engineer with professional experience as a Windows Desktop Developer and personal
+                interest in Game Development, Simulations, and 3D Modelling and Animation.</p>
         </div>
-
-        <template id="projectTemplate">
-            <div class="project">
-                <div class="thumbnail">
-                    <a>
-                        <img>
-                    </a>
-                </div>
-                <div class="projectBody">
-                    <h2></h2>
-                    <p></p>
-                </div>
-            </div>
-        </template>
-
-        <script src="js/index.js"></script>
+        <div class="portrait"></div>
     </div>
 
+    <!-- TODO: Background Decoration to be completed later. Needs to ensure that any white drawings don't interfere with the white text of the introduction-->
+    <!-- <div class="main">
+        <canvas class="bgCanvas" id="personalizedBackground"></canvas>
+    </div> -->
 </body>
 
 </html>
